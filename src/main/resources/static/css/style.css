@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #6366F1;
+    --secondary-color: #A855F7;
+    --accent-color: #EC5899;
+    --dark-color: #0A0A16;
+    --darker-color: #050510;
+    --light-color: #F8FAFC;
+    --text-color: #E2E8F0;
+    --text-light: #94A3B8;
+    --success-color: #10B981;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: var(--light-color);
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: var(--darker-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
