@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
@@ -17,14 +17,7 @@
 <body>
 
     <!-- Loading animation -->
-    <div class="loader-wrapper">
-        <div class="loader">
-            <div class="loader-text">D.E.D</div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-            <div class="loader-circle"></div>
-        </div>
-    </div>
+    <div th:replace="~{fragments/loader :: loader}"></div>
 
     <h1>Display this after load</h1>
 
