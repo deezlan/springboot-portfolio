@@ -101,3 +101,35 @@ a {
     }
 }
 
+/* Floating elements */
+.floating-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.shape-1 {
+    background: var(--primary-color);
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: -100px;
+}
+
+.shape-2 {
+    background: var(--secondary-color);
+    width: 400px;
+    height: 400px;
+    top: 60%;
+    right: -150px;
+}
+
+.shape-3 {
+    background: var(--accent-color);
+    width: 250px;
+    height: 250px;
+    bottom: 10%;
+    left: 10%;
+}
