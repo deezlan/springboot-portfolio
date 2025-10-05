@@ -19,13 +19,16 @@
     <!-- Loading animation -->
     <div th:replace="~{fragments/loader :: loader}"></div>
 
-    <!-- Header -->
-    <div th:replace="~{fragments/header :: site-header}"></div>
-
     <!-- Background shapes -->
     <div class="floating-shape shape-1"></div>
     <div class="floating-shape shape-2"></div>
     <div class="floating-shape shape-3"></div>
+
+    <!-- Header -->
+    <div th:replace="~{fragments/header :: site-header}"></div>
+
+    <!-- Hero-->
+    <div th:replace="~{fragments/hero :: hero-section}"></div>
 
     <!-- Custom script file-->
     <script src="/js/script.js"></script>
