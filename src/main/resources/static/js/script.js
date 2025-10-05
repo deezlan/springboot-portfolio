@@ -32,3 +32,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+};
+
+const projectObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('animated');
+            }, index * 200);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.project-card').forEach(card => {
+    projectObserver.observe(card);
+});
