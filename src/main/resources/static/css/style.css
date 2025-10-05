@@ -713,3 +713,18 @@ span.logo-last {
     font-weight: 500;
     font-size: 0.9rem;
 }
+
+/* Projects Section */
+.projects {
+    position: relative;
+    background: var(--dark-color);
+    z-index: 1;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
