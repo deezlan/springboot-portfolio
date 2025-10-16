@@ -861,3 +861,8 @@ span.logo-last {
 .project-link:hover i {
     transform: translateX(5px);
 }
+
+/* Experience Section */
+.experience {
+    position: relative;
+}
