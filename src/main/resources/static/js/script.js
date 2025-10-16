@@ -52,3 +52,16 @@ const projectObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.project-card').forEach(card => {
     projectObserver.observe(card);
 });
+
+// Timeline Section
+const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.timeline-content').forEach(item => {
+    timelineObserver.observe(item);
+});
