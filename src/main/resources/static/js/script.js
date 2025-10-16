@@ -65,3 +65,18 @@ const timelineObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.timeline-content').forEach(item => {
     timelineObserver.observe(item);
 });
+
+// Achievements Section
+const achievementObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('animated');
+            }, index * 200);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.achievement-card').forEach(card => {
+    achievementObserver.observe(card);
+});
