@@ -1225,3 +1225,8 @@ textarea.form-control {
     font-size: 1rem;
     line-height: 1.8;
 }
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
