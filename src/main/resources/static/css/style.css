@@ -1192,3 +1192,36 @@ textarea.form-control {
     min-height: 150px;
     resize: vertical;
 }
+
+/* Footer */
+.footer {
+    background: var(--darker-color);
+    padding: 5rem 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-brand {
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer-text {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.8;
+}
