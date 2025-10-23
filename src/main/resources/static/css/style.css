@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #6366F1;
-    --secondary-color: #A855F7;
-    --accent-color: #EC5899;
-    --dark-color: #0A0A16;
-    --darker-color: #050510;
-    --light-color: #F8FAFC;
-    --text-color: #E2E8F0;
-    --text-light: #94A3B8;
-    --success-color: #10B981;
+    --primary-color: #3B82F6;   /* Modern Blue */
+    --secondary-color: #22D3EE; /* Cyan */
+    --accent-color: #67E8F9;    /* Light Cyan */
+    --dark-color: #0A0A16;      /* (Original) */
+    --darker-color: #050510;    /* (Original) */
+    --light-color: #F8FAFC;    /* (Original) */
+    --text-color: #E2E8F0;     /* (Original) */
+    --text-light: #94A3B8;    /* (Original) */
+    --success-color: #10B981;  /* (Original) */
 }
 
 * {
@@ -115,7 +115,7 @@ a {
     border-radius: 50%;
     filter: blur(30px);
     opacity: 0.15;
-    z-index: 1;
+    z-index: -2;
 }
 
 .shape-1 {
@@ -136,10 +136,10 @@ a {
 
 .shape-3 {
     background: var(--accent-color);
-    width: 250px;
-    height: 250px;
-    bottom: 10%;
-    left: 10%;
+    width: 350px;
+    height: 350px;
+    bottom: 0;
+    left: 0;
 }
 
 /* Header section */
@@ -240,10 +240,10 @@ span.logo-last {
     height: 100%;
     z-index: -1;
     opacity: 0.15;
-    background-image: url('https://cdn.pixabay.com/photo/2022/09/13/11/30/pattern-7451714_1280.jpg');
+    background-image: url('../img/hero-background.jpg');
     background-size: cover;
     background-position: center;
-    filter: contrast(1.2) brightness(0.7);
+    filter: contrast(2.8) brightness(0.3) sepia(0) hue-rotate(180deg);
 }
 
 .hero-container {
