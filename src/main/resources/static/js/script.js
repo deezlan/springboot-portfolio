@@ -54,17 +54,17 @@ document.querySelectorAll('.project-card').forEach(card => {
 });
 
 // Timeline Section
-const timelineObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animated');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.timeline-content').forEach(item => {
-    timelineObserver.observe(item);
-});
+// const timelineObserver = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add('animated');
+//         }
+//     });
+// }, observerOptions);
+//
+// document.querySelectorAll('.timeline-content').forEach(item => {
+//     timelineObserver.observe(item);
+// });
 
 // Achievements Section
 const achievementObserver = new IntersectionObserver((entries) => {
