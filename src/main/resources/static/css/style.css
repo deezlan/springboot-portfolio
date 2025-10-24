@@ -166,32 +166,54 @@ a {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--light-color);
+.logo,
+.logo-icon {
     position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo span {
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-span.logo-last {
-    color: var(--light-color);
-}
-
-.logo::after {
+.logo-icon::before,
+.logo-icon::after {
     content: '';
     position: absolute;
-    width: 55px;
-    height: 3px;
-    background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-    bottom: -5px;
-    left: 0;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: 15%;
+    mix-blend-mode: screen;
+}
+
+.logo-icon::before {
+    background-color: rebeccapurple;
+    animation: logo-rotate-fast 10s linear infinite;
+}
+
+.logo-icon::after {
+    background-color: teal;
+    animation: logo-rotate-slow 20s linear infinite;
+}
+
+/* The "N" text itself */
+.logo-letter {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes logo-rotate-fast {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes logo-rotate-slow {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
 }
 
 .nav-links {

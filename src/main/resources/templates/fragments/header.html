@@ -3,7 +3,11 @@
 <th:block th:fragment="site-header">
     <header class="header">
         <div class="container header-container">
-            <div class="logo">D.<span>E.</span><span class="logo-last">D</span></div>
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="logo-letter">D</div>
+                </div>
+            </div>
             <nav class="nav">
                 <div class="nav-links">
                     <a href="#about" class="nav-link">About</a>
@@ -13,6 +17,9 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </div>
             </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 </th:block>
