@@ -322,6 +322,13 @@ a {
     color: var(--text-light);
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem; /* Adjust the spacing as needed */
+    justify-content: left; /* Optional: center the buttons horizontally */
+    align-items: center;     /* Optional: align vertically if buttons differ in height */
+}
+
 .hero-visual {
     position: relative;
     z-index: 2;
@@ -1326,6 +1333,16 @@ textarea.form-control {
     }
 
     .hero-greeting {
+        justify-content: center;
+    }
+
+    .hero-description {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
         justify-content: center;
     }
 
