@@ -80,3 +80,14 @@ const achievementObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.achievement-card').forEach(card => {
     achievementObserver.observe(card);
 });
+
+// Mobile Nav
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navWrapper = document.querySelector('.nav-links-wrapper');
+
+    menuBtn.addEventListener('click', () => {
+        navWrapper.classList.toggle('active');
+        menuBtn.classList.toggle('open');
+    });
+});
